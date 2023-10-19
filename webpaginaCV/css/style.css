@@ -1,0 +1,43 @@
+* {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 40px;
+  }
+
+h1 {
+    color: darkgreen;
+}
+
+h2 {
+    position: relative;
+    top: 20px;
+}
+
+.tristan {
+    color: darkgreen;
+}
+
+.educatie {
+    color: darkgreen;
+}
+
+.VEVA {
+    color: darkgreen;
+}
+
+.verkenner {
+    color: darkgreen;
+}
+
+.my-list {
+    color: darkgreen;
+    position: relative;
+    right: 20px;
+    top: 5px;
+}
