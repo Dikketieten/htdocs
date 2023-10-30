@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ml">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form Basis</title>
+        <link rel="stylesheet"type="text/css"href="style.css">
+    </head>
+
+    <body>
+        <div class="form-container">
+            <form action="mailto:97111310@st.deltion.nl" method="post">
+                
+                <label for="fname">Voornaam:</label>
+                <br>
+                <input type="text" id="fname" name="fname" placeholder="Voornaam" maxlength="100" value="" required>
+                <br>
+
+                <label for="lname">Achternaam:</label>
+                <br>
+                <input type="text" id="lname" name="lname" placeholder="Achternaam" maxlength="100" value="" required>
+                <br>
+
+                <label for="sadres">Adres:</label>
+                <br>
+                <input type="text" id="sadres" name="sadres" placeholder="Adres" value="" required>
+                <br>
+
+                <label for="kzipcode">Postcode:</label>
+                <br>
+                <input type="text" id="kzipcode" name="kzipcode" placeholder="Postcode" maxlength="6" value="" required>
+                <br>
+
+                <label for="iplace">Plaats:</label>
+                <br>
+                <input type="text" id="iplace" name="iplace" placeholder="Plaats" maxlength="100" value="" required>
+                <br>
+
+                <label for="hbirthdate">Geboortedatum:</label>
+                <br>
+                <input type="date" id="hbirthdate" name="hbirthdate" placeholder="Geboortedatum" value="" required>
+                <br>
+
+                <label for="jemail">Email:</label>
+                <br>
+                <input type="email" id="jemail" name="jemail" placeholder="Email" value="" required>
+                <br>
+
+
+                <label for="geslacht">Geslacht:</label>
+                <br>
+
+                <label for="geslacht">Man</label>
+                <input type="radio" id="geslacht" name="geslacht" placeholder="Radio" value="man">
+
+                <label for="geslacht">Vrouw</label>
+                <input type="radio" id="geslacht" name="geslacht" placeholder="Radio" value="vrouw">
+                <br>
+
+                <form>
+                    <label for="myTextarea">Opmerking:</label>
+                    <br>
+                    <textarea name="comments" id="myTextarea" rows="4" cols="50" maxlength="400"></textarea>
+                    <br>
+                    <input type="submit" value="Submit">
+                </form>
+
+                <form>
+                    <label for="xcheckbox">Inschrijven voor de nieuwsbrief</label>
+                    <br>
+
+                    <label for="checkbox">Ja</label>
+                    <input type="checkbox" id="xcheckbox" name="xcheckbox" placeholder="Inschrijven voor de nieuwsbrief" value="yes" required>
+
+                    <label for="checkbox">Nee</label>
+                    <input type="checkbox" id="xcheckbox" name="xcheckbox" placeholder="Inschrijven voor de nieuwsbrief" value="no" required>
+                </form>
+
+                <br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
+</html>
