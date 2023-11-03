@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+section nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* section logo */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner img {
+    vertical-align: middle;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+/* navagation */
+#nav {
+    text-align: center;
+    margin: 15px;
+}
+#nav a {
+    margin-right: 10px;
+}
+/* pagina producten */
+tbody td, tbody th {
+    padding: 50px;
+    text-align: center;
+}
+
+tr, td, th {
+    border-bottom: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+#tableindex {
+    margin-left: auto;
+    margin-right: auto;
+}
+#tableindex img {
+    align-items: center;
+}
+/* contact formulier */
+label {
+    color: black;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+::placeholder {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid darkgreen;
+    border-radius: 5px;
+    background-color: green;
+    opacity: 70%;
+}
+input[type="submit"]:hover {
+    background-color: darkgreen;
+}
