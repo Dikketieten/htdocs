@@ -8,16 +8,16 @@
 <?php
 	error_reporting(E_ERROR);
 
-	if(isset($_POST["submit"])){
-		$naam = $_POST["naam"];
-		$land = $_POST["land"];}
-	elseif(!isset($_POST["submit"])){
+	if(isset($_GET["submit"])){
+		$naam = $_GET["naam"];
+		$land = $_GET["land"];}
+	elseif(!isset($_GET["submit"])){
 		$land = "";
 	}
 ?>
 <body>
 
-	<form method="post" action="">
+	<form method="get" action="">
 	Naam: <input type="text" name="naam" placeholder="Uw naam" required /><br />
 	Land:
 	<select name="land" requierd>
@@ -35,24 +35,26 @@
 
 	<?php 
 	
-		if($land=='NL'){
-			echo 'Goedemorgen '.$naam;
-		}
-		elseif($land=='DE'){
-			echo 'Guten Morgen '.$naam;
-		}
-		elseif($land=='EN'){
-			echo 'Good morning '.$naam;
-		}
-        elseif($land=='FR'){
-			echo 'Bonjour '.$naam;
-		}
-        elseif($land=='SP'){
-			echo 'Buen día '.$naam;
-		}
-        elseif($land=='IT'){
-			echo 'Buongiorno '.$naam;
-		}
+	switch ($land) {
+		case "NL":
+		  echo "Goedemorgen $naam";
+		  break;
+		case "DE":
+		  echo "Guten morgen $naam";
+		  break;
+		case "EN":
+		  echo "Good morning $naam";
+		  break;
+		case "FR":
+			echo "Bonjour $naam";
+			break;
+		case "SP":
+			echo "Buen día $naam";
+			break;
+		case "IT":
+			echo "Buongiorno $naam";
+			break;
+	}
 	?>
 
 </body>
